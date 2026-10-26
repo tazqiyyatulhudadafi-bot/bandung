@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 10;
+}
+
+.quicksand-uniquifier {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+ 
+a:hover {
+  color: #f90404;
+}
+
+p::first-line{
+  font-weight: bold;
+}
+
+a:hover::after {
+  content: "🎀";
+}
+
+nav {
+    background-color: rgb(88, 118, 161);
+
+}
+
+nav ul{
+    padding: 10px;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+body > header{
+  background-color: cornflowerblue;
+  color: aliceblue;
+  padding-top: 40px;
+  
+}
+
+
+header h1{
+  text-align: center;
+}
+
+header p{
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+main{
+  display: flex;
+  margin: 40px;
+}
+
+#content {
+    flex: 3;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: justify;
+    padding: 30px; /* TAMBAHAN: Memberi jarak agar teks/gambar tidak menempel di pinggir kotak shadow */
+    box-sizing: border-box;
+}  
+
+aside {
+    flex: 1;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px; /* TAMBAHAN: Memberi jarak agar teks tidak menempel di pinggir kotak shadow */
+    box-sizing: border-box;
+}
+
+article > h2 {
+    text-align: center;
+}
+
+/* PERBAIKAN: Sebelumnya #contentimg (tanpa spasi), yang benar adalah #content img */
+#content img {
+    margin-top: 15px;
+    margin-bottom: 25px; /* Jarak dari teks di bawahnya */
+    max-width: 100%;     /* Agar gambar tidak keluar/jebol dari kotak shadow */
+    height: auto;
+    border-radius: 10px; /* Opsional: membuat sudut gambar sedikit membulat agar estetik */
+}
+
+#content p {
+    margin-top: 15px;
+    line-height: 1.6; /* Membuat jarak antar baris teks lebih lega untuk dibaca */
+}
+  
